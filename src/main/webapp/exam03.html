@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#upload_file_check").change(function() {
+			var is_check = $(this).is(":checked");
+			
+			$("#file_finder").prop("disabled", !is_check);
+		});
+	});
+</script>
+</head>
+<body>
+	<h2>활성/비활성화 구현하기</h2>
+	<form action="" name="form1">
+		<input type="checkbox" id="upload_file_check" value="Y">
+		
+		<label>파일올리기</label>
+		
+		<input type="file" id="file_finder" disabled="disabled">
+	</form>
+</body>
+</html>

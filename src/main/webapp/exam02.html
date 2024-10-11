@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#all_check").change(function(){
+			// 체크 상태 확인
+			var is_check = $(this).is(":checked");
+			
+			$(".hobby").prop("checked", is_check);
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>전체 선택 기능 구현하기</h1>
+	<form action="" name="form1">
+		<fieldset>
+			<legend>취미</legend>
+			<div>
+				<input type="checkbox" id="all_check" value="Y">
+				<label for="all_check">전체 선택</label>
+			</div>
+			
+			<div>
+				<input type="checkbox" class="hobby" value="축구">축구
+				<input type="checkbox" class="hobby" value="야구">야구
+				<input type="checkbox" class="hobby" value="농구">농구
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

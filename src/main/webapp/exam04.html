@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("img[src='img/jquery.jpg']").hover(function(){
+			$(this).attr("src", "img/jquery_on.jpg");
+		}, function(){
+			$(this).attr("src", "img/jquery.jpg");
+		});
+		$("img[src='img/javascript.jpg']").hover(function(){
+			$(this).attr("src", "img/javascript_on.jpg");
+		}, function(){
+			$(this).attr("src", "img/javascript.jpg");
+		});
+		$("img[src='img/css.jpg']").hover(function(){
+			$(this).attr("src", "img/css_on.jpg");
+		}, function(){
+			$(this).attr("src", "img/css.jpg");
+		});
+		$("img[src='img/html.jpg']").hover(function(){
+			$(this).attr("src", "img/html_on.jpg");
+		}, function(){
+			$(this).attr("src", "img/html.jpg");
+		});
+			
+		});
+</script>
+<style type="text/css">
+td {
+	padding: 0;
+	margin: 0;
+}
+</style>
+</head>
+<body>
+	<table cellspacing="0">
+		<tr>
+			<td><a href="#"><img alt="jQuery" src="img/jquery.jpg"></a></td>
+			<td><a href="#"><img alt="javascript"
+					src="img/javascript.jpg"></a></td>
+			<td><a href="#"><img alt="CSS" src="img/css.jpg"></a></td>
+			<td><a href="#"><img alt="HTML" src="img/html.jpg"></a></td>
+		</tr>
+	</table>
+</body>
+</html>
